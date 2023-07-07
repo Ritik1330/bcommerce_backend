@@ -1,0 +1,35 @@
+{
+  "name": "marn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon backend/server.js ",
+    "start": "node backend/server.js",
+    "post_i": "npm run build_i --prefix frontend && npm i",
+    "post_install": " npm i && npm run build_i --prefix frontend ",
+    "poststart": "npm run build --prefix frontend && node backend/server.js",
+    "postbuild": "npm i && npm run build_i --prefix frontend && npm run build --prefix frontend"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cloudinary": "^1.37.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.1.0",
+    "nodemailer": "^6.9.2",
+    "razorpay": "^2.8.6",
+    "stripe": "^12.9.0",
+    "validator": "^13.9.0"
+  },
+  "engines": {
+    "node": ">=14.20.1"
+  }
+}
