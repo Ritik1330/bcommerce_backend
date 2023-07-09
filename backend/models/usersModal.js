@@ -27,11 +27,11 @@ const userschema = new mongoose.Schema({
   avatar: {
     public_id: {
       type: String,
-      required: true,
+      default:"undefined"
     },
     url: {
       type: String,
-      required: true,
+      default: "https://cdn-icons-png.flaticon.com/128/3177/3177440.png"
     },
   },
   role: {
